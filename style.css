@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+    justify-content: space-between;
+
+}
+
+/* ---- HEADER ----- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    padding: 5px;
+    margin: 10px 5px;
+    vertical-align: middle;
+}
+
+header nav ul li .user img {
+    height: 35px;
+}
+
+header nav ul li span {
+    opacity: 0.4;
+}
+
+header nav ul li a {
+    font-size: 13px;
+    color: #222;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav ul li span:hover {
+    opacity: 0.8;
+
+}
+
+/* ---- MAIN ---- */
+
+main .logo {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    margin-top: -200px;
+}
+
+form div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+form .search input {
+    margin: 25px auto;
+    width: 40%;
+    min-width: 350px;
+    max-width: 550px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    background-image: url(img/search_black_24dp.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+
+}
+
+form .search input:focus {
+    outline: none;
+    border: transparent;
+    background-image: none;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #222;
+}
+
+form .search input:hover {
+    outline: none;
+    border: transparent;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+
+}
+
+form .btn {
+    display: flex;
+    box-sizing: border-box;
+}
+
+form .btn input {
+    margin: 11px 4px;
+    padding: 0 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    line-height: 36px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+form .btn input:hover {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+main .ofr {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #222;
+    text-align: center;
+    margin: 15px;
+
+}
+
+main .ofr a {
+    text-decoration: none;
+
+}
+
+main .ofr a:hover {
+    text-decoration: underline;
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+    background: #f2f2f2;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* justify-self: flex-end; */
+    /* justify-items: flex-end;  */
+    /* justify-content: flex-end; */
+}
+
+footer .pais {
+    padding: 15px 30px;
+    color: #70757a;
+    border-bottom: 2px solid #dadce0;
+}
+
+footer .ayuda {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .ayuda ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+
+footer .footer ul li {
+    padding: 15px 30px;
+}
+
+footer .terminos ul li {
+    padding: 15px 30px;
+}
+
+footer .footer ul li a {
+    text-decoration: none;
+    color: #70757a;
+
+}
+
+footer .terminos ul li a {
+    text-decoration: none;
+    color: #70757a;
+    padding: 0 30px;
+
+}
+
+footer .ayuda a:hover {
+    text-decoration: underline;
+}
